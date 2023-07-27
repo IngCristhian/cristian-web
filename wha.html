@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WALPHAMS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #007bff;
+            padding: 5px 10px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        table th {
+            background-color: #f0f0f0;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #scan-result {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WALPHAMS</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#dashboard">Panel de Control</a></li>
+            <li><a href="#inventory">Inventario</a></li>
+            <li><a href="#barcode-scanner">Escaneo de Código de Barras</a></li>
+            <!-- Otras secciones -->
+        </ul>
+    </nav>
+
+    <div class="container" id="dashboard">
+        <h2>Panel de Control</h2>
+        <!-- Resumen del inventario -->
+        <div id="inventory-summary">
+            <p>Inventario Total: 1000 unidades</p>
+            <p>Inventario Disponible: 800 unidades</p>
+            <p>Inventario Reservado: 100 unidades</p>
+            <p>Productos Agotados: 5</p>
+        </div>
+    </div>
+
+    <div class="container" id="inventory">
+        <h2>Gestión de Inventario</h2>
+        <input type="text" id="search-product" placeholder="Buscar producto por nombre, código de barras o categoría">
+        <table>
+            <thead>
+                <tr>
+                    <th>Código de Barras</th>
+                    <th>Nombre</th>
+                    <th>Cantidad Disponible</th>
+                    <th>Ubicación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Filas de productos serían generadas dinámicamente desde la base de datos -->
+                <tr>
+                    <td>1234567890</td>
+                    <td>Producto A</td>
+                    <td>50</td>
+                    <td>Estantería A-1</td>
+                </tr>
+                <tr>
+                    <td>0987654321</td>
+                    <td>Producto B</td>
+                    <td>100</td>
+                    <td>Estantería B-3</td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="add-product-btn">Agregar Nuevo Producto</button>
+    </div>
+
+    <div class="container" id="barcode-scanner">
+        <h2>Escaneo de Código de Barras</h2>
+        <input type="text" id="barcode-input" placeholder="Escanear código de barras">
+        <button id="scan-btn">Escanear</button>
+        <div id="scan-result">
+            <!-- Aquí se mostraría el resultado del escaneo -->
+        </div>
+    </div>
+
+    <!-- Otras secciones (Órdenes de Compra, Órdenes de Venta, Generación de Informes, Configuración) -->
+
+</body>
+</html>
