@@ -1,0 +1,17 @@
+body{
+    background-color: #333;
+    margin: 1em;
+}
+
+img{
+    max-width: 100%;
+    margin-bottom: 0.5em;
+    display: block;
+    outline: 2px solid #fff;
+    outline-offset: -7px;
+}
+
+.row{
+    columns:5 320px;
+    column-gap: 0.5em;
+}
