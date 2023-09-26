@@ -28,14 +28,21 @@ body{
 }
 
 .menu{
-    display: flex;
+    display: flex;    
+    width: 50%;
+    justify-content: space-around;
 }
 
 .menu li{
     list-style: none;
+
 }
 
 .menu a {
     color: #fff;
     text-decoration: none;
+}
+
+.menu .active{
+    color: #0ddceb;
 }
