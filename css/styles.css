@@ -21,6 +21,11 @@ body{
 .navbar{
     display: flex;
     justify-content: space-between;
+    padding: 2em;
+}
+
+.brand{
+    margin-top: -7px;
 }
 
 .brand span{
@@ -41,8 +46,16 @@ body{
 .menu a {
     color: #fff;
     text-decoration: none;
+    padding: 10px 20px;
 }
 
 .menu .active{
     color: #0ddceb;
+}
+.menu a:hover{
+    background-color: #0ddceb;
+    color: #191c32;
+    transition: ease-in .4s;
+
+
 }
